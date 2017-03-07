@@ -44,7 +44,7 @@ public class QuoteAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         if (view == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            inflater.inflate(R.layout.item_quote, viewGroup, true);
+            view = inflater.inflate(R.layout.item_quote, null);
         }
 
         Quote quote = (Quote) getItem(i);

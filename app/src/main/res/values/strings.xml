@@ -7,4 +7,5 @@
         <item>Quote #2</item>
         <item>Quote #3</item>
     </string-array>
+    <string name="title_activity_quote_details">Details</string>
 </resources>

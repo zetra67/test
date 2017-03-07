@@ -6,15 +6,18 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.ListViewCompat;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.Toast;
 
 import com.supinfo.geekquotes.models.Quote;
 
 import java.util.ArrayList;
 
-public class ListQuotesActivity extends AppCompatActivity {
+public class ListQuotesActivity extends AppCompatActivity implements ListViewCompat.OnItemClickListener {
 
     private ArrayList<Quote> quotes;
 
@@ -43,6 +46,7 @@ public class ListQuotesActivity extends AppCompatActivity {
         quoteAdapter = new QuoteAdapter(quotes, this);
         quotesListView = (ListViewCompat) findViewById(R.id.quotes_list_view);
         quotesListView.setAdapter(quoteAdapter);
+        quotesListView.setOnItemClickListener(this);
     }
 
     @Override
@@ -75,5 +79,10 @@ public class ListQuotesActivity extends AppCompatActivity {
         for (String quoteContent : getResources().getStringArray(R.array.example_quotes)) {
             addQuote(quoteContent);
         }
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        Toast.makeText(ListQuotesActivity.this, quoteAdapter.getItem(i).toString(), Toast.LENGTH_SHORT).show();
     }
 }

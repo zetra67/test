@@ -19,6 +19,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".QuoteDetailsActivity"
+            android:label="@string/title_activity_quote_details"
+            android:parentActivityName=".ListQuotesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.supinfo.geekquotes.ListQuotesActivity" />
+        </activity>
     </application>
 
 </manifest>
