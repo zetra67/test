@@ -1,4 +1,4 @@
-package com.supinfo.geekquotes;
+package com.supinfo.geekquotes.models;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,13 +8,9 @@ import android.widget.BaseAdapter;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.supinfo.geekquotes.models.Quote;
+import com.supinfo.geekquotes.R;
 
 import java.util.ArrayList;
-
-/**
- * Created by Quentin on 07/03/2017.
- */
 
 public class QuoteAdapter extends BaseAdapter {
     private ArrayList<Quote> quotes;
@@ -31,7 +27,7 @@ public class QuoteAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int i) {
+    public Quote getItem(int i) {
         return quotes.get(i);
     }
 
@@ -47,7 +43,7 @@ public class QuoteAdapter extends BaseAdapter {
             view = inflater.inflate(R.layout.item_quote, null);
         }
 
-        Quote quote = (Quote) getItem(i);
+        Quote quote = getItem(i);
 
         TextView quoteContent = (TextView) view.findViewById(R.id.quote_content);
         RatingBar quoteRating = (RatingBar) view.findViewById(R.id.quote_rating);

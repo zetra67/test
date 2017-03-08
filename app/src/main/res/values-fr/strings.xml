@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Geek Quotes</string>
+    <string name="title_activity_quote_details">Détails</string>
+
+    <string name="button_discard">Annuler</string>
+    <string name="button_save">Sauvegarder</string>
+    <string name="add_quote">Ajotuer une nouvelle citation</string>
+    <string name="add">Ajouter</string>
+    <string name="cancel">Annuler</string>
+    <string name="quote_saved">Citation sauvée avec succès.</string>
+    <string name="quote_changes_discarded">Modifications annulées.</string>
+</resources>

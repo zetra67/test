@@ -3,13 +3,9 @@ package com.supinfo.geekquotes.models;
 import java.io.Serializable;
 import java.util.Calendar;
 
-/**
- * Created by Quentin on 07/03/2017.
- */
-
 public class Quote implements Serializable {
     private String content;
-    private int rating;
+    private float rating;
     private Calendar creationDate;
 
     public Quote(String content) {
@@ -26,11 +22,11 @@ public class Quote implements Serializable {
         this.content = content;
     }
 
-    public int getRating() {
+    public float getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(float rating) {
         this.rating = rating;
     }
 

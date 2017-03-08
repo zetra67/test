@@ -17,7 +17,6 @@
                 android:id="@+id/quote_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Content"
                 android:textAlignment="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
 
@@ -33,7 +32,6 @@
                 android:id="@+id/quote_creation_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Creation date"
                 android:textAlignment="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle" />
         </LinearLayout>
