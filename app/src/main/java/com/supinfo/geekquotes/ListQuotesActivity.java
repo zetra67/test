@@ -111,7 +111,7 @@ public class ListQuotesActivity extends AppCompatActivity implements ListViewCom
                         break;
                     case RESULT_CANCELED:
                         Toast.makeText(this, getString(R.string.quote_changes_discarded), Toast.LENGTH_SHORT).show();
-                        break;;;
+                        break;
                 }
                 break;
         }
