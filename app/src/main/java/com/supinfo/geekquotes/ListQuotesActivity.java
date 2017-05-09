@@ -24,7 +24,7 @@ public class ListQuotesActivity extends AppCompatActivity implements ListViewCom
 
     public final static int REQUEST_CODE = 123;
 
-    private ArrayList<Quote> quotes;;;
+    private ArrayList<Quote> quotes;
 
     private QuoteAdapter quoteAdapter;
     private ListView quotesListView;
